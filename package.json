@@ -1,0 +1,27 @@
+{
+  "name": "mgrneventbooking",
+  "version": "1.0.0",
+  "description": "\"# MGRN-EventBooking\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stephaniie2/MGRN-EventBooking.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/stephaniie2/MGRN-EventBooking/issues"
+  },
+  "homepage": "https://github.com/stephaniie2/MGRN-EventBooking#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.1"
+  }
+}
