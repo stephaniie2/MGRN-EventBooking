@@ -24,7 +24,6 @@ class AuthPage extends Component {
 
   submitHandler = event => {
     event.preventDefault();
-
     const email = this.emailEl.current.value;
     const password = this.passwordEl.current.value;
 
@@ -65,8 +64,8 @@ class AuthPage extends Component {
       },
     })
       .then(res => {
-        if (res.status !== 200 && res.status !== 2001) {
-          throw new Error('Failed');
+        if (res.status !== 200 && res.status !== 201) {
+          throw new Error('Failed!');
         }
         return res.json();
       })
@@ -78,14 +77,12 @@ class AuthPage extends Component {
             resData.data.login.tokenExpiration
           );
         }
-        console.log(resData);
       })
       .catch(err => {
         console.log(err);
       });
-
-    console.log(email, password);
   };
+
   render() {
     return (
       <form className="auth-form" onSubmit={this.submitHandler}>
